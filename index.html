@@ -23,8 +23,18 @@
            
             <div class="container-navigation container">
                 <nav class="navigaion-part">
-                    <a href=./index.html class="logo">Web<span class="main-logo-head">Studio</span></a>
-                    <ul class="header-section-list">
+                    <div class="navigaion-part-logo">
+                        <a href=./index.html class="logo">Web<span class="main-logo-head">Studio</span></a>
+                        <div class="header-btn">
+                            <button type="button" class="header-btn-mob" id="toggleButton">
+                                <svg class="" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <ul class="header-section-list menu-list">
                         <li class="header-section-list-item "><a href="./index.html" class="navigaion-help mod">Studio</a></li>
                         <li class="header-section-list-item"><a href="" class="navigaion-help">Portfolio</a></li>
                         <li class="header-section-list-item"><a href="" class="navigaion-help">Contacts</a></li>
@@ -32,12 +42,71 @@
                 </nav>
 
 
-                <address class="contacts-inform">
-                    <ul class=" contacts-inform-part">
+                <address class="contacts-inform navigaion-lincs-list">
+                    <ul class="contacts-inform-part inform-part">
                         <li><a href="mailto:info@devstudio.com" class="navigaion-lincs">info@devstudio.com</a></li>
                         <li><a href="tel:+110001111111" class="navigaion-lincs">+11 (000) 111-11-11</a></li>
                     </ul>
                 </address>
+
+                <div class="head-mob-menu" id="mob-menu" is-open-mob>
+                    <button type="button" class="menu-open-btn" id="close-btn" close-btn>
+                        <svg class="menu-close-svg" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                        </svg>
+                    </button>
+                    <nav>
+                        <ul class="head-mob-menu-list menu-list">
+                            <li class="head-mob-menu-item">
+                                <a class="mob-menu-link header-studio" href="./index.html">Studio</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link" href="">Portfolio</a>
+                            </li>
+                            <li class="mob-menu-item">
+                                <a class="mob-menu-link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mob-menu-contacts">
+                        <div class="mob-menu-contacts-inform">
+                            <ul class="mob-menu-contacts-inform-part">
+                                <a class="mob-menu-contacts-navigaion-help" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                <a class="mob-menu-contacts-navigaion-help" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </ul>
+                        </div>
+                        <ul class="mob-media-icons">
+                            <li class="mob-media-icons-list">
+                                <a class="mob-icons-list-link" href="#">
+                                    <svg class="mediaicons" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-insta"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-media-item">
+                                <a class="mob-icons-list-link" href="#">
+                                    <svg class="mediaicons" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-tvit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-media-item">
+                                <a class="mob-icons-list-link" href="#">
+                                    <svg class="mediaicons" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="mob-media-item">
+                                <a class="mob-icons-list-link" href="#">
+                                    <svg class="mediaicons" width="16" height="16">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         
         </header>
